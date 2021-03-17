@@ -1,0 +1,9 @@
+**/x64/
+.vs/
+**/*.user
+*.user
+*.log
+*.vcxproj.user
+.idea/
+**/out/
+Extra/CDClientGen/CDClient.sqlite

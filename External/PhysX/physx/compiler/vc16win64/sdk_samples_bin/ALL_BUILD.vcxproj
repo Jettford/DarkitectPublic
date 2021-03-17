@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DBD7B537-52F5-31B8-9D68-D57565181E4B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\Darkitect\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;F:\Darkitect\External\PhysX\externals\targa\targa-config-version.cmake;F:\Darkitect\External\PhysX\externals\targa\targa-config.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\Darkitect\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;F:\Darkitect\External\PhysX\externals\targa\targa-config-version.cmake;F:\Darkitect\External\PhysX\externals\targa\targa-config.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\Darkitect\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;F:\Darkitect\External\PhysX\externals\targa\targa-config-version.cmake;F:\Darkitect\External\PhysX\externals\targa\targa-config.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\Darkitect\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;F:\Darkitect\External\PhysX\externals\targa\targa-config-version.cmake;F:\Darkitect\External\PhysX\externals\targa\targa-config.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;F:\Darkitect\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\ZERO_CHECK.vcxproj">
+      <Project>{7F705DE1-C694-3D17-8C2B-593D5452D6BD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleBase.vcxproj">
+      <Project>{169D2FBA-C1F7-30EB-87B4-8FB760919651}</Project>
+      <Name>SampleBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleFramework.vcxproj">
+      <Project>{718B5D2C-C40B-3700-87ED-78CC420278BD}</Project>
+      <Name>SampleFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SamplePlatform.vcxproj">
+      <Project>{66A99D5D-607F-30BD-97D0-B70A6481D7D8}</Project>
+      <Name>SamplePlatform</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleRenderer.vcxproj">
+      <Project>{826D09F1-36AD-3F65-ADC4-DA9FD4EE6CAF}</Project>
+      <Name>SampleRenderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleToolkit.vcxproj">
+      <Project>{3F2E5629-E48A-304E-9221-FB067D1FE869}</Project>
+      <Name>SampleToolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\Samples.vcxproj">
+      <Project>{16B1318D-189D-308B-8CEB-0B6A23B1F754}</Project>
+      <Name>Samples</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

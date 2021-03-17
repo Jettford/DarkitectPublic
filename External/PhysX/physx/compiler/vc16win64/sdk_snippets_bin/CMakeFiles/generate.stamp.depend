@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+F:/Darkitect/External/PhysX/externals/cmakemodules/ConfigureFileMT.cmake
+F:/Darkitect/External/PhysX/externals/cmakemodules/GetCompilerAndPlatform.cmake
+F:/Darkitect/External/PhysX/externals/cmakemodules/NvidiaBuildOptions.cmake
+F:/Darkitect/External/PhysX/externals/cmakemodules/SetOutputPaths.cmake
+F:/Darkitect/External/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt
+F:/Darkitect/External/PhysX/physx/snippets/compiler/cmake/SnippetRender.cmake
+F:/Darkitect/External/PhysX/physx/snippets/compiler/cmake/SnippetTemplate.cmake
+F:/Darkitect/External/PhysX/physx/snippets/compiler/cmake/SnippetUtils.cmake
+F:/Darkitect/External/PhysX/physx/snippets/compiler/cmake/SnippetVehicleTemplate.cmake
+F:/Darkitect/External/PhysX/physx/snippets/compiler/cmake/windows/CMakeLists.txt
+F:/Darkitect/External/PhysX/physx/snippets/compiler/cmake/windows/SnippetRender.cmake
+F:/Darkitect/External/PhysX/physx/snippets/compiler/cmake/windows/SnippetTemplate.cmake
+F:/Darkitect/External/PhysX/physx/snippets/compiler/cmake/windows/SnippetUtils.cmake
+F:/Darkitect/External/PhysX/physx/snippets/compiler/cmake/windows/SnippetVehicleTemplate.cmake

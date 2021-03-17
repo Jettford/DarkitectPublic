@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\Adjacencies.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\Cooking.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\CookingUtils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\EdgeList.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\MeshCleaner.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\Quantizer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\BVHStructureBuilder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\mesh\HeightFieldCooking.cpp">
+      <Filter>src\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\mesh\RTreeCooking.cpp">
+      <Filter>src\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\mesh\MeshBuilder.cpp">
+      <Filter>src\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\mesh\TriangleMeshBuilder.cpp">
+      <Filter>src\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\mesh\GrbTriangleMeshCooking.cpp">
+      <Filter>src\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\BigConvexDataBuilder.cpp">
+      <Filter>src\convex</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\ConvexHullBuilder.cpp">
+      <Filter>src\convex</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\ConvexHullLib.cpp">
+      <Filter>src\convex</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\ConvexHullUtils.cpp">
+      <Filter>src\convex</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\ConvexMeshBuilder.cpp">
+      <Filter>src\convex</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\ConvexPolygonsBuilder.cpp">
+      <Filter>src\convex</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\QuickHullConvexHullLib.cpp">
+      <Filter>src\convex</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\VolumeIntegration.cpp">
+      <Filter>src\convex</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\windows\WindowsCookingDelayLoadHook.cpp">
+      <Filter>src\windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\include\cooking\PxBVH33MidphaseDesc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\include\cooking\PxBVH34MidphaseDesc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\include\cooking\Pxc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\include\cooking\PxConvexMeshDesc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\include\cooking\PxCooking.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\include\cooking\PxMidphaseDesc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\include\cooking\PxTriangleMeshDesc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\include\cooking\PxBVHStructureDesc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\Adjacencies.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\Cooking.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\CookingUtils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\EdgeList.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\MeshCleaner.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\Quantizer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\BVHStructureBuilder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\mesh\GrbTriangleMeshCooking.h">
+      <Filter>src\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\mesh\HeightFieldCooking.h">
+      <Filter>src\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\mesh\QuickSelect.h">
+      <Filter>src\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\mesh\RTreeCooking.h">
+      <Filter>src\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\mesh\MeshBuilder.h">
+      <Filter>src\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\mesh\TriangleMeshBuilder.h">
+      <Filter>src\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\BigConvexDataBuilder.h">
+      <Filter>src\convex</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\ConvexHullBuilder.h">
+      <Filter>src\convex</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\ConvexHullLib.h">
+      <Filter>src\convex</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\ConvexHullUtils.h">
+      <Filter>src\convex</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\ConvexMeshBuilder.h">
+      <Filter>src\convex</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\ConvexPolygonsBuilder.h">
+      <Filter>src\convex</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\QuickHullConvexHullLib.h">
+      <Filter>src\convex</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Darkitect\External\PhysX\physx\source\physxcooking\src\convex\VolumeIntegration.h">
+      <Filter>src\convex</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Darkitect\External\PhysX\physx\source\compiler\cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="F:\Darkitect\External\PhysX\physx\source\compiler\resource_x64\PhysXCooking.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{A1ECCA4B-5E76-3B06-8EEB-3EA4C27BDBBD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{AE004781-F53C-3430-A2FA-B6CFC869E462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{955E9283-102F-36D3-A7AF-6A5CCC7C78AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\convex">
+      <UniqueIdentifier>{FB933DEA-54A9-39E4-B8E2-BCE0D99478E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mesh">
+      <UniqueIdentifier>{A9AFC38F-FE31-36D6-A773-D9514DF7EB9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\windows">
+      <UniqueIdentifier>{2FA07F3C-5293-3840-958E-E065B757893D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

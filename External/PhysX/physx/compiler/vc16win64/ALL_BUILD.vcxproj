@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DBD7B537-52F5-31B8-9D68-D57565181E4B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Darkitect\External\PhysX\physx\compiler\public\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/compiler/public/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeCCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeCXXCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeRCCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/compiler/public/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeCCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeCXXCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeRCCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/compiler/public/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeCCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeCXXCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeRCCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/compiler/public/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeCCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeCXXCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeRCCompiler.cmake;F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\3.19.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\ZERO_CHECK.vcxproj">
+      <Project>{7F705DE1-C694-3D17-8C2B-593D5452D6BD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\FastXml.vcxproj">
+      <Project>{C03371CB-A128-3749-9A6B-BB1B4D79A1A7}</Project>
+      <Name>FastXml</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\LowLevel.vcxproj">
+      <Project>{156A3097-A854-361A-8538-F63BD1A2079E}</Project>
+      <Name>LowLevel</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\LowLevelAABB.vcxproj">
+      <Project>{2F3263BA-C3E3-332E-888A-CC2EE21FC73A}</Project>
+      <Name>LowLevelAABB</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\LowLevelDynamics.vcxproj">
+      <Project>{A092CE2D-2083-39D6-9CA2-DF92CB9E4306}</Project>
+      <Name>LowLevelDynamics</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysX.vcxproj">
+      <Project>{BF4FAD13-DBB0-314E-BF91-CD1409231743}</Project>
+      <Name>PhysX</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXCharacterKinematic.vcxproj">
+      <Project>{5DA23AA8-0238-343A-8C4F-AFB8B3AB4B80}</Project>
+      <Name>PhysXCharacterKinematic</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXCommon.vcxproj">
+      <Project>{AF7F43D1-FB62-309E-849B-73BEA910CC62}</Project>
+      <Name>PhysXCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXCooking.vcxproj">
+      <Project>{25E7BFA3-6186-317A-9B5E-10F352E7B3D0}</Project>
+      <Name>PhysXCooking</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXExtensions.vcxproj">
+      <Project>{E81D64D1-FCEC-31F8-9724-B33D3DCB0040}</Project>
+      <Name>PhysXExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXFoundation.vcxproj">
+      <Project>{49B314F1-F601-32BF-BA8B-BF37A11A93D4}</Project>
+      <Name>PhysXFoundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXPvdSDK.vcxproj">
+      <Project>{584F6B7A-6C4B-31BA-94C7-F563A5229768}</Project>
+      <Name>PhysXPvdSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXTask.vcxproj">
+      <Project>{E54F9D43-EFEB-308C-BD38-EB356E3406F8}</Project>
+      <Name>PhysXTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXVehicle.vcxproj">
+      <Project>{F0A0B3CB-9260-310D-8C38-8A8EC98A96EA}</Project>
+      <Name>PhysXVehicle</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleBase.vcxproj">
+      <Project>{169D2FBA-C1F7-30EB-87B4-8FB760919651}</Project>
+      <Name>SampleBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleFramework.vcxproj">
+      <Project>{718B5D2C-C40B-3700-87ED-78CC420278BD}</Project>
+      <Name>SampleFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SamplePlatform.vcxproj">
+      <Project>{66A99D5D-607F-30BD-97D0-B70A6481D7D8}</Project>
+      <Name>SamplePlatform</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleRenderer.vcxproj">
+      <Project>{826D09F1-36AD-3F65-ADC4-DA9FD4EE6CAF}</Project>
+      <Name>SampleRenderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleToolkit.vcxproj">
+      <Project>{3F2E5629-E48A-304E-9221-FB067D1FE869}</Project>
+      <Name>SampleToolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\Samples.vcxproj">
+      <Project>{16B1318D-189D-308B-8CEB-0B6A23B1F754}</Project>
+      <Name>Samples</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\SceneQuery.vcxproj">
+      <Project>{316C7D1F-EEA0-3C6C-AA7D-B6F7F41AA5BA}</Project>
+      <Name>SceneQuery</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\SimulationController.vcxproj">
+      <Project>{1629A074-9DB6-35F5-A531-70645A6468C2}</Project>
+      <Name>SimulationController</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetArticulation.vcxproj">
+      <Project>{34E99645-9203-37D1-B784-284112D8DF1F}</Project>
+      <Name>SnippetArticulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetBVHStructure.vcxproj">
+      <Project>{00A714FD-96E9-329B-9C43-B30569CF8E6B}</Project>
+      <Name>SnippetBVHStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetContactModification.vcxproj">
+      <Project>{9D3E7278-AF7A-3BB1-BDD4-84051CE8EF4F}</Project>
+      <Name>SnippetContactModification</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetContactReport.vcxproj">
+      <Project>{7E8425AE-54C7-31EF-A78B-D8579E908ABD}</Project>
+      <Name>SnippetContactReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetContactReportCCD.vcxproj">
+      <Project>{7EF360E4-EBA7-3B51-BAB3-68A5846CA0F7}</Project>
+      <Name>SnippetContactReportCCD</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetConvert.vcxproj">
+      <Project>{7BF33AE1-5941-3AD6-A24F-E81CFD041E5D}</Project>
+      <Name>SnippetConvert</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetConvexMeshCreate.vcxproj">
+      <Project>{8B2AEA15-45B6-3777-A752-7E32AFE767C4}</Project>
+      <Name>SnippetConvexMeshCreate</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetCustomJoint.vcxproj">
+      <Project>{00D8E404-B149-355E-BFBB-7B7D881F5B96}</Project>
+      <Name>SnippetCustomJoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetCustomProfiler.vcxproj">
+      <Project>{5F05367F-EA18-342E-9C25-C902C3FC2D6E}</Project>
+      <Name>SnippetCustomProfiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetDeformableMesh.vcxproj">
+      <Project>{4D3F01E1-AF67-39FF-BBD6-BB470F67F129}</Project>
+      <Name>SnippetDeformableMesh</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetDelayLoadHook.vcxproj">
+      <Project>{39D4E7AD-9849-3359-B9C1-9F7BF215EFC6}</Project>
+      <Name>SnippetDelayLoadHook</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetHelloGRB.vcxproj">
+      <Project>{6F7A5B10-0B8A-3647-86B0-C1FD5F4A632B}</Project>
+      <Name>SnippetHelloGRB</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetHelloWorld.vcxproj">
+      <Project>{71D2682A-5E09-35F1-BA7B-B94D7F84EC9F}</Project>
+      <Name>SnippetHelloWorld</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetImmediateArticulation.vcxproj">
+      <Project>{328D07A0-D0D6-3E1B-92C4-3A441AFFA614}</Project>
+      <Name>SnippetImmediateArticulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetImmediateMode.vcxproj">
+      <Project>{26E868B5-AC1D-30FD-AECB-4A3C02F22BC9}</Project>
+      <Name>SnippetImmediateMode</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetJoint.vcxproj">
+      <Project>{B40A6541-173C-327D-AE9D-F1711072EE05}</Project>
+      <Name>SnippetJoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetLoadCollection.vcxproj">
+      <Project>{5C2D7663-91EB-3122-BE60-6287486D1F2E}</Project>
+      <Name>SnippetLoadCollection</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetMBP.vcxproj">
+      <Project>{68D04516-D17E-393B-B4B5-2BA4B54DBA80}</Project>
+      <Name>SnippetMBP</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetMultiThreading.vcxproj">
+      <Project>{46D6094C-9555-3DE7-8EB1-D24B0F69B5A3}</Project>
+      <Name>SnippetMultiThreading</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetNestedScene.vcxproj">
+      <Project>{F089E711-E166-3B4D-AB50-E25C36723768}</Project>
+      <Name>SnippetNestedScene</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetPrunerSerialization.vcxproj">
+      <Project>{C9316B77-A6F7-35BA-8426-7496B90328F4}</Project>
+      <Name>SnippetPrunerSerialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetRaycastCCD.vcxproj">
+      <Project>{284D79FB-2BBB-35FB-A4E0-DA91AA3CA515}</Project>
+      <Name>SnippetRaycastCCD</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetRender.vcxproj">
+      <Project>{C41EE656-0573-343E-A263-7B83AFF350D6}</Project>
+      <Name>SnippetRender</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetSerialization.vcxproj">
+      <Project>{C4E91504-0978-3AF6-8D52-1FECD401F127}</Project>
+      <Name>SnippetSerialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetSplitFetchResults.vcxproj">
+      <Project>{673BE242-823F-3AC4-B10A-17CF2460048B}</Project>
+      <Name>SnippetSplitFetchResults</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetSplitSim.vcxproj">
+      <Project>{4E610F40-8226-356F-AF47-79A1EB213798}</Project>
+      <Name>SnippetSplitSim</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetStepper.vcxproj">
+      <Project>{94565F24-2C4F-3229-A366-F8DF8AF11B36}</Project>
+      <Name>SnippetStepper</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetToleranceScale.vcxproj">
+      <Project>{4D588719-C49A-3C19-8611-B5A987406439}</Project>
+      <Name>SnippetToleranceScale</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetTriangleMeshCreate.vcxproj">
+      <Project>{F99A3992-4705-3442-85E2-CED47145602E}</Project>
+      <Name>SnippetTriangleMeshCreate</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetUtils.vcxproj">
+      <Project>{F7D90B38-45CC-3568-BA4D-29E012E726EB}</Project>
+      <Name>SnippetUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicle4W.vcxproj">
+      <Project>{E08FB910-A22F-35F4-B36C-B9C854F09988}</Project>
+      <Name>SnippetVehicle4W</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleContactMod.vcxproj">
+      <Project>{88680794-120C-3CC1-A716-689A42817D28}</Project>
+      <Name>SnippetVehicleContactMod</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleMultiThreading.vcxproj">
+      <Project>{64A24F8F-62BA-3C09-8CFF-C02E16790D3F}</Project>
+      <Name>SnippetVehicleMultiThreading</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleNoDrive.vcxproj">
+      <Project>{8100FEFD-CEE7-3004-AC6E-891B07DA1A1B}</Project>
+      <Name>SnippetVehicleNoDrive</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleScale.vcxproj">
+      <Project>{E27531EF-6A8A-367D-BFC8-07D1A3F0186A}</Project>
+      <Name>SnippetVehicleScale</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleTank.vcxproj">
+      <Project>{0DC4DD8F-3CC6-39A0-9047-2A5A2BFAB0A7}</Project>
+      <Name>SnippetVehicleTank</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

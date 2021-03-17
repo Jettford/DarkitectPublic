@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+F:/Darkitect/External/PhysX/externals/cmakemodules/ConfigureFileMT.cmake
+F:/Darkitect/External/PhysX/externals/cmakemodules/GetCompilerAndPlatform.cmake
+F:/Darkitect/External/PhysX/externals/cmakemodules/NvidiaBuildOptions.cmake
+F:/Darkitect/External/PhysX/externals/cmakemodules/SetOutputPaths.cmake
+F:/Darkitect/External/PhysX/externals/targa/targa-config-version.cmake
+F:/Darkitect/External/PhysX/externals/targa/targa-config.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/SampleBase.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/SampleFramework.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/SamplePlatform.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/SampleRenderer.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/Samples.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/SamplesToolkit.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/windows/CMakeLists.txt
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/windows/SampleBase.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/windows/SampleFramework.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/windows/SamplePlatform.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/windows/SampleRenderer.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/windows/Samples.cmake
+F:/Darkitect/External/PhysX/physx/samples/compiler/cmake/windows/SamplesToolkit.cmake

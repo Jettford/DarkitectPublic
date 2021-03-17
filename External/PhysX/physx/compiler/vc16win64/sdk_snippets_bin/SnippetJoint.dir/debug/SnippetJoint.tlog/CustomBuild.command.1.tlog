@@ -1,0 +1,10 @@
+^F:\DARKITECT\EXTERNAL\PHYSX\PHYSX\SNIPPETS\COMPILER\CMAKE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

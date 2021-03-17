@@ -1,0 +1,6 @@
+[submodule "External/tinyxml2"]
+	path = External/tinyxml2
+	url = https://github.com/leethomason/tinyxml2
+[submodule "External/PhysX"]
+	path = External/PhysX
+	url = https://github.com/NVIDIAGameWorks/PhysX.git

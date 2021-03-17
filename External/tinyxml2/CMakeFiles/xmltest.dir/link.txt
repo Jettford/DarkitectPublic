@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/xmltest.dir/xmltest.cpp.o -o xmltest  -Wl,-rpath,/media/jett/JOMB-HDD-03/Darkitect/External/tinyxml2 libtinyxml2.so.8.0.0 

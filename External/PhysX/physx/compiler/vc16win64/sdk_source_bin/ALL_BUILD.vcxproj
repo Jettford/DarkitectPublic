@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DBD7B537-52F5-31B8-9D68-D57565181E4B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Darkitect\External\PhysX\physx\source\compiler\cmake\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\Darkitect\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\template\PxIncludeTemplate.h;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\FastXml.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevel.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevelAABB.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevelDynamics.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysX.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCommon.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCooking.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXExtensions.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXFoundation.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXPvdSDK.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXTask.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXVehicle.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\SceneQuery.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\SimulationController.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\CMakeLists.txt;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\FastXml.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevel.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysX.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCommon.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCooking.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXTask.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\SceneQuery.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\Darkitect\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\template\PxIncludeTemplate.h;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\FastXml.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevel.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevelAABB.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevelDynamics.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysX.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCommon.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCooking.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXExtensions.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXFoundation.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXPvdSDK.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXTask.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXVehicle.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\SceneQuery.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\SimulationController.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\CMakeLists.txt;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\FastXml.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevel.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysX.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCommon.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCooking.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXTask.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\SceneQuery.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\Darkitect\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\template\PxIncludeTemplate.h;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\FastXml.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevel.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevelAABB.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevelDynamics.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysX.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCommon.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCooking.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXExtensions.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXFoundation.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXPvdSDK.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXTask.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXVehicle.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\SceneQuery.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\SimulationController.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\CMakeLists.txt;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\FastXml.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevel.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysX.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCommon.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCooking.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXTask.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\SceneQuery.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule F:/Darkitect/External/PhysX/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Darkitect/External/PhysX/physx/compiler/public -BF:/Darkitect/External/PhysX/physx/compiler/vc16win64 --check-stamp-file F:/Darkitect/External/PhysX/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\Darkitect\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;F:\Darkitect\External\PhysX\externals\cmakemodules\template\PxIncludeTemplate.h;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\FastXml.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevel.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevelAABB.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\LowLevelDynamics.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysX.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCommon.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXCooking.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXExtensions.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXFoundation.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXPvdSDK.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXTask.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\PhysXVehicle.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\SceneQuery.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\SimulationController.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\CMakeLists.txt;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\FastXml.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevel.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysX.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCommon.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXCooking.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXTask.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\SceneQuery.cmake;F:\Darkitect\External\PhysX\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\ZERO_CHECK.vcxproj">
+      <Project>{7F705DE1-C694-3D17-8C2B-593D5452D6BD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\FastXml.vcxproj">
+      <Project>{C03371CB-A128-3749-9A6B-BB1B4D79A1A7}</Project>
+      <Name>FastXml</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\LowLevel.vcxproj">
+      <Project>{156A3097-A854-361A-8538-F63BD1A2079E}</Project>
+      <Name>LowLevel</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\LowLevelAABB.vcxproj">
+      <Project>{2F3263BA-C3E3-332E-888A-CC2EE21FC73A}</Project>
+      <Name>LowLevelAABB</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\LowLevelDynamics.vcxproj">
+      <Project>{A092CE2D-2083-39D6-9CA2-DF92CB9E4306}</Project>
+      <Name>LowLevelDynamics</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysX.vcxproj">
+      <Project>{BF4FAD13-DBB0-314E-BF91-CD1409231743}</Project>
+      <Name>PhysX</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXCharacterKinematic.vcxproj">
+      <Project>{5DA23AA8-0238-343A-8C4F-AFB8B3AB4B80}</Project>
+      <Name>PhysXCharacterKinematic</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXCommon.vcxproj">
+      <Project>{AF7F43D1-FB62-309E-849B-73BEA910CC62}</Project>
+      <Name>PhysXCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXCooking.vcxproj">
+      <Project>{25E7BFA3-6186-317A-9B5E-10F352E7B3D0}</Project>
+      <Name>PhysXCooking</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXExtensions.vcxproj">
+      <Project>{E81D64D1-FCEC-31F8-9724-B33D3DCB0040}</Project>
+      <Name>PhysXExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXFoundation.vcxproj">
+      <Project>{49B314F1-F601-32BF-BA8B-BF37A11A93D4}</Project>
+      <Name>PhysXFoundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXPvdSDK.vcxproj">
+      <Project>{584F6B7A-6C4B-31BA-94C7-F563A5229768}</Project>
+      <Name>PhysXPvdSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXTask.vcxproj">
+      <Project>{E54F9D43-EFEB-308C-BD38-EB356E3406F8}</Project>
+      <Name>PhysXTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXVehicle.vcxproj">
+      <Project>{F0A0B3CB-9260-310D-8C38-8A8EC98A96EA}</Project>
+      <Name>PhysXVehicle</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\SceneQuery.vcxproj">
+      <Project>{316C7D1F-EEA0-3C6C-AA7D-B6F7F41AA5BA}</Project>
+      <Name>SceneQuery</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Darkitect\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\SimulationController.vcxproj">
+      <Project>{1629A074-9DB6-35F5-A531-70645A6468C2}</Project>
+      <Name>SimulationController</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

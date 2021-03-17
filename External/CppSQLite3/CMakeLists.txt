@@ -1,0 +1,1 @@
+add_library(CppSQLite STATIC CppSQLite3.cpp CppSQLite3.h sqlite3.c sqlite3.h sqlite3ext.h)
